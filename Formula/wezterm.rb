@@ -6,8 +6,8 @@
 class Wezterm < Formula
   desc "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
   homepage "https://wezfurlong.org/wezterm/"
-  url "https://github.com/wez/wezterm/releases/download/20201101-103216-403d002d/WezTerm-macos-20201101-103216-403d002d.zip"
-  sha256 "1b5312144cd81b1dc8d100101cfe2c404e80d2fefa21bbc2540d7b58450347a6"
+  url "https://github.com/wez/wezterm/releases/download/20210203-095643-70a364eb/WezTerm-macos-20210203-095643-70a364eb.zip"
+  sha256 "b981e356bc7323e23b5f6b767b10fd530737878529aa70c26252438abb1bfc24"
   head "https://github.com/wez/wezterm/releases/download/nightly/WezTerm-macos-nightly.zip"
 
   def install
@@ -18,4 +18,3 @@ class Wezterm < Formula
     bin.write_exec_script "#{prefix}/WezTerm.app/strip-ansi-escapes"
   end
 end
-
