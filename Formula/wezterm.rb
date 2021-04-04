@@ -6,8 +6,8 @@
 class Wezterm < Formula
   desc "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
   homepage "https://wezfurlong.org/wezterm/"
-  url "https://github.com/wez/wezterm/releases/download/20210404-111518-fe48951e/WezTerm-macos-20210404-111518-fe48951e.zip"
-  sha256 "49ccd610f32e4fc0c31fce40f33e146a75831e28305bf0f168ee9dca7f5aa07c"
+  url "https://github.com/wez/wezterm/releases/download/20210404-112810-b63a949d/WezTerm-macos-20210404-112810-b63a949d.zip"
+  sha256 "c843add5e65189f02ed1c546dd25d162b610d98655e4834a65371269d6804984"
   head "https://github.com/wez/wezterm/releases/download/nightly/WezTerm-macos-nightly.zip"
 
   def install
