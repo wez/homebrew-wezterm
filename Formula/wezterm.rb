@@ -6,9 +6,32 @@
 class Wezterm < Formula
   desc "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
   homepage "https://wezfurlong.org/wezterm/"
-  url "https://github.com/wez/wezterm/releases/download/20210502-154244-3f7122cb/WezTerm-macos-20210502-154244-3f7122cb.zip"
-  sha256 "be8e235d5bf6b2876a993f8c084cd7bfc3cf8121e7aa99038d9209ee87dd9118"
+  version "20210522-migration-notice"
+  url "https://github.com/wez/wezterm/releases/download/#{version}/WezTerm-macos-#{version}.zip"
+  sha256 :no_check
   head "https://github.com/wez/wezterm/releases/download/nightly/WezTerm-macos-nightly.zip"
+
+  disable! date: "2021-05-22", because: <<~EOS
+    is migrated from
+    current Formula to Casks 'wezterm' and 'wezterm-nightly'. With the new Casks,
+    the WezTerm.app will be put into /Applications/ automatically.
+
+    You should migrate to the new Cask right now.
+    If you have formula 'wezterm' installed, uninstall it first,
+      brew uninstall --formula wezterm
+      rm -rf /Applications/WezTerm.app
+    Then install WezTerm from the new cask 'wezterm',
+      brew install --cask wezterm
+    or 'wezterm-nightly' for nightly build,
+      brew install --cask wezterm-nightly
+
+    This formula may remain in the repo for a while to notice users migrate to the cask,
+    which results a name conflict between the formula 'wezterm' and the cask 'wezterm'.
+    Please pass '--cask' explicitly when doing 'wezterm' related 'brew' command, e.g.
+      brew upgrade --cask wezterm
+
+    Sorry about the trouble for you guys
+  EOS
 
   def install
     prefix.install "WezTerm.app"
