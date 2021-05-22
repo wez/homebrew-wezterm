@@ -21,14 +21,14 @@ class Wezterm < Formula
       brew uninstall --formula wezterm
       rm -rf /Applications/WezTerm.app
     Then install WezTerm from the new cask 'wezterm',
-      brew install --cask wezterm
+      brew install --cask wezterm --no-quarantine
     or 'wezterm-nightly' for nightly build,
-      brew install --cask wezterm-nightly
+      brew install --cask wezterm-nightly --no-quarantine
 
     This formula may remain in the repo for a while to notice users migrate to the cask,
     which results a name conflict between the formula 'wezterm' and the cask 'wezterm'.
     Please pass '--cask' explicitly when doing 'wezterm' related 'brew' command, e.g.
-      brew upgrade --cask wezterm
+      brew upgrade --cask wezterm --no-quarantine
 
     Sorry about the trouble for you guys
   EOS
