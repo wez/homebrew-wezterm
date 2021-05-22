@@ -43,6 +43,11 @@ cask "wezterm-nightly" do
       /opt/homebrew/bin/ for M1 Mac.
 
     Removal of them is ensured by 'brew uninstall --cask #{token}'.
+
+    Since there's no version info included in the download URL of the nightly
+    build, NO update will be notified for 'wezterm-nightly' by Homebrew. (Not a
+    problem for non-nightly, regular released 'wezterm'.) To get the nightly
+    update, just run 'brew upgrade --cask wezterm-nightly'.
   EOS
   end
 end
