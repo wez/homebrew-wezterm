@@ -1,6 +1,11 @@
+# Note: if you are viewing this from the tap repo, this file is automatically
+# updated from:
+# https://github.com/wez/wezterm/blob/main/ci/wezterm-homebrew-macos.rb.template
+# by automation in the wezterm repo.
+# vim:ft=ruby:
 cask "wezterm" do
-  version "20210502-154244-3f7122cb"
-  sha256 "be8e235d5bf6b2876a993f8c084cd7bfc3cf8121e7aa99038d9209ee87dd9118"
+  version "20210814-124438-54e29167"
+  sha256 "1b3a86e881ad24dd93b39cc7c50478804482438f734aee7ca44cefa5384188a8"
 
   url "https://github.com/wez/wezterm/releases/download/#{version}/WezTerm-macos-#{version}.zip"
   name "WezTerm"
