@@ -4,8 +4,8 @@
 # by automation in the wezterm repo.
 # vim:ft=ruby:
 cask "wezterm" do
-  version "20211205-192649-672c1cc1"
-  sha256 "74be671b70935e9b694ec18bef1978068aa0ea951ca0ff5881a6698dbbc7a5a2"
+  version "20220101-124905-f2c04077"
+  sha256 "e87b3fb83fdbd0e105c6d6fb6a5bb15435963c6f3cd3db5f0dcac0e915a8677a"
 
   url "https://github.com/wez/wezterm/releases/download/#{version}/WezTerm-macos-#{version}.zip"
   name "WezTerm"
