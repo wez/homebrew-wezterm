@@ -3,6 +3,6 @@
 A Homebrew Tap for installing [wezterm](http://wezfurlong.org/wezterm/) for homebrew users.
 
 ```bash
-$ brew tap wez/wezterm
-$ brew install wezterm
+brew tap wez/wezterm
+brew install --cask wez/wezterm/wezterm
 ```
