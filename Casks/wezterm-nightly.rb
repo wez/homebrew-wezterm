@@ -24,7 +24,7 @@ cask "wezterm-nightly" do
 
       year = match[4]
       month_idx = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"].index {|month| month == match[3].downcase}
-      month = (month ? month + 1 : 0).to_s.rjust(2,"0")
+      month = (month_idx ? month_idx + 1 : 0).to_s.rjust(2,"0")
       day = match[2].rjust(2, '0')
       hour = match[5].rjust(2, '0')
       minute = match[6].rjust(2, '0')
